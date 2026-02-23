@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bgc" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2A1F3D"/>
+      <stop offset="100%" stop-color="#0D0D0D"/>
+    </radialGradient>
+    <radialGradient id="glowc" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bgc)"/>
+  <rect width="200" height="200" fill="url(#glowc)"/>
+  <circle cx="100" cy="85" r="35" fill="#1A1A2E" stroke="#A78BFA" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="90" cy="78" r="6" fill="#E2E8F0"/>
+  <circle cx="110" cy="78" r="6" fill="#E2E8F0"/>
+  <path d="M92 98 Q100 108 108 98" stroke="#A78BFA" stroke-width="1.5" fill="none"/>
+  <text x="100" y="150" text-anchor="middle" font-family="serif" font-size="12" fill="#A78BFA" font-style="italic" opacity="0.6">waiting...</text>
+</svg>

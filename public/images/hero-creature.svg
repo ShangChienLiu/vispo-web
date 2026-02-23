@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="480" viewBox="0 0 520 480">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#2A1F3D"/>
+      <stop offset="100%" stop-color="#0D0D0D"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="520" height="480" fill="url(#bg)"/>
+  <rect width="520" height="480" fill="url(#glow)"/>
+  <circle cx="260" cy="200" r="80" fill="#1A1A2E" stroke="#7C3AED" stroke-width="2" opacity="0.6"/>
+  <circle cx="235" cy="185" r="12" fill="#E2E8F0"/>
+  <circle cx="285" cy="185" r="12" fill="#E2E8F0"/>
+  <circle cx="237" cy="187" r="5" fill="#1A1A1A"/>
+  <circle cx="287" cy="187" r="5" fill="#1A1A1A"/>
+  <path d="M240 220 Q260 240 280 220" stroke="#E2E8F0" stroke-width="2" fill="none"/>
+  <text x="260" y="320" text-anchor="middle" font-family="serif" font-size="18" fill="#666" font-style="italic">Your creature awaits...</text>
+</svg>

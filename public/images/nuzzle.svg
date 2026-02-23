@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <radialGradient id="bg3" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1E5F3A"/>
+      <stop offset="100%" stop-color="#0D1711"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" stop-color="#4ADE80" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="440" height="280" fill="url(#bg3)"/>
+  <rect width="440" height="280" fill="url(#glow3)"/>
+  <circle cx="220" cy="120" r="50" fill="#1B2D1E" stroke="#4ADE80" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="205" cy="110" r="10" fill="#BBF7D0"/>
+  <circle cx="235" cy="110" r="10" fill="#BBF7D0"/>
+  <path d="M208 135 Q220 150 232 135" stroke="#4ADE80" stroke-width="2" fill="none"/>
+  <text x="220" y="210" text-anchor="middle" font-family="serif" font-size="16" fill="#4ADE80" font-style="italic" opacity="0.7">Nuzzle</text>
+</svg>

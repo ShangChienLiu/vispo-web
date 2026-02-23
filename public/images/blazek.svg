@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#5F1E1E"/>
+      <stop offset="100%" stop-color="#170D0D"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="45%" r="35%">
+      <stop offset="0%" stop-color="#F87171" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="440" height="280" fill="url(#bg2)"/>
+  <rect width="440" height="280" fill="url(#glow2)"/>
+  <circle cx="220" cy="120" r="50" fill="#2D1B1B" stroke="#F87171" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="205" cy="108" r="9" fill="#FCA5A5"/>
+  <circle cx="235" cy="108" r="9" fill="#FCA5A5"/>
+  <path d="M205 138 L220 130 L235 138" stroke="#F87171" stroke-width="2" fill="none"/>
+  <text x="220" y="210" text-anchor="middle" font-family="serif" font-size="16" fill="#F87171" font-style="italic" opacity="0.7">Blazek</text>
+</svg>
