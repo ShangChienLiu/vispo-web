@@ -7,19 +7,19 @@ const companions = [
     name: "Lumis",
     type: "The Patient Scholar",
     desc: "Calm, methodical, and endlessly patient. Lumis breaks down complex topics into gentle steps. Perfect for deep thinkers and careful learners.",
-    image: "/images/lumis.svg",
+    image: "/images/lumis.png",
   },
   {
     name: "Blazek",
     type: "The Fierce Motivator",
     desc: "High-energy and competitive. Blazek pushes you with timed challenges, streaks, and an unstoppable drive to level up. Born for exam warriors.",
-    image: "/images/blazek.svg",
+    image: "/images/blazek.png",
   },
   {
     name: "Nuzzle",
     type: "The Creative Explorer",
     desc: "Curious and imaginative. Nuzzle connects ideas across subjects, finding creative links you never expected. Ideal for explorers and artists.",
-    image: "/images/nuzzle.svg",
+    image: "/images/nuzzle.png",
   },
 ];
 

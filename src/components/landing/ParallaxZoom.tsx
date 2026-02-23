@@ -17,7 +17,7 @@ export default function ParallaxZoom() {
     <section ref={ref} className="relative h-[560px] w-full overflow-hidden">
       <motion.div style={{ scale }} className="absolute inset-0 h-full w-full">
         <img
-          src="/images/parallax-bg.svg"
+          src="/images/parallax-bg.png"
           alt="Learning adventure"
           className="h-full w-full object-cover"
         />

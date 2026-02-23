@@ -74,7 +74,7 @@ export default function Hero() {
           className="relative h-[360px] w-full max-w-[520px] overflow-hidden lg:h-[480px]"
         >
           <img
-            src="/images/hero-creature.svg"
+            src="/images/hero-creature.png"
             alt="Vispo creature companion"
             className="h-full w-full object-cover"
           />

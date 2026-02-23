@@ -6,7 +6,6 @@ import HowItWorks from "@/components/landing/HowItWorks";
 import ParallaxZoom from "@/components/landing/ParallaxZoom";
 import CompanionShowcase from "@/components/landing/CompanionShowcase";
 import WhyVispo from "@/components/landing/WhyVispo";
-import Stats from "@/components/landing/Stats";
 import WaitlistCTA from "@/components/landing/WaitlistCTA";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
@@ -20,7 +19,6 @@ export default function Home() {
       <ParallaxZoom />
       <CompanionShowcase />
       <WhyVispo />
-      <Stats />
       <WaitlistCTA />
       <FAQ />
       <Footer />

@@ -48,7 +48,7 @@ export default function WaitlistCTA() {
           transition={{ duration: 0.7, type: "spring", bounce: 0.3 }}
           className="relative h-[200px] w-[200px] overflow-hidden"
         >
-          <img src="/images/cta-creature.svg" alt="Your creature is waiting" className="h-full w-full object-cover" />
+          <img src="/images/cta-creature.png" alt="Your creature is waiting" className="h-full w-full object-cover" />
         </motion.div>
 
         <div className="flex flex-col items-center gap-4">
