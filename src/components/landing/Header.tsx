@@ -15,9 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-[#E5E2DC] bg-[#FDFCF9]/95 backdrop-blur-sm">
       <div className="mx-auto flex h-[74px] max-w-[1440px] items-center justify-between px-6 md:px-16">
         <div className="flex items-center gap-8">
-          <span className="font-playfair text-2xl font-bold tracking-[4px] text-[#1A1A1A]">
-            VISPO
-          </span>
+          <img src="/images/vispo-logo.png" alt="Vispo" className="h-10 w-auto" />
           <nav className="hidden items-center gap-6 md:flex">
             <button
               onClick={() => scrollTo("hero")}
