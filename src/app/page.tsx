@@ -1,5 +1,6 @@
 "use client";
 
+import { LanguageProvider } from "@/i18n/LanguageContext";
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import HowItWorks from "@/components/landing/HowItWorks";
@@ -12,16 +13,18 @@ import Footer from "@/components/landing/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FDFCF9]">
-      <Header />
-      <Hero />
-      <HowItWorks />
-      <ParallaxZoom />
-      <CompanionShowcase />
-      <WhyVispo />
-      <WaitlistCTA />
-      <FAQ />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-[#FDFCF9]">
+        <Header />
+        <Hero />
+        <HowItWorks />
+        <ParallaxZoom />
+        <CompanionShowcase />
+        <WhyVispo />
+        <WaitlistCTA />
+        <FAQ />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }

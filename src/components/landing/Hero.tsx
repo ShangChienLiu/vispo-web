@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useLanguage, renderWithBreaks } from "@/i18n/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -19,7 +22,7 @@ export default function Hero() {
           >
             <span className="h-2 w-2 rounded-full bg-[#22C55E]" />
             <span className="text-[11px] font-semibold tracking-[1px] text-[#999]">
-              Global AI Tutoring Platform — Early Access 2026
+              {t("hero.badge") as string}
             </span>
           </motion.div>
 
@@ -29,9 +32,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-playfair text-5xl leading-[1.05] font-medium italic tracking-[-2px] text-white md:text-7xl"
           >
-            Learn. Grow.
-            <br />
-            Evolve Together.
+            {renderWithBreaks(t("hero.title") as string)}
           </motion.h1>
 
           <motion.p
@@ -40,10 +41,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="max-w-[520px] font-inter text-lg leading-[1.6] text-[#777]"
           >
-            Vispo is a global AI tutoring platform where every student gets a
-            personal creature companion. It learns with you, adapts to you, and
-            evolves as you master new subjects — across every language and every
-            discipline.
+            {t("hero.description") as string}
           </motion.p>
 
           <motion.div
@@ -56,13 +54,13 @@ export default function Hero() {
               onClick={() => scrollTo("waitlist")}
               className="bg-[#FDFCF9] px-8 py-4 text-[13px] font-semibold tracking-[1px] text-[#1A1A1A] transition-colors hover:bg-white"
             >
-              JOIN THE WAITLIST
+              {t("hero.joinWaitlist") as string}
             </button>
             <button
               onClick={() => scrollTo("how-it-works")}
               className="text-[13px] text-[#777] transition-colors hover:text-white"
             >
-              Explore the platform ↓
+              {t("hero.explore") as string}
             </button>
           </motion.div>
         </div>

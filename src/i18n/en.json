@@ -1,0 +1,92 @@
+{
+  "header": {
+    "about": "About",
+    "platform": "Platform",
+    "companions": "Companions",
+    "faq": "FAQ",
+    "joinWaitlist": "JOIN WAITLIST"
+  },
+  "hero": {
+    "badge": "Global AI Tutoring Platform — Early Access 2026",
+    "title": "Learn. Grow.\nEvolve Together.",
+    "description": "Vispo is a global AI tutoring platform where every student gets a personal creature companion. It learns with you, adapts to you, and evolves as you master new subjects — across every language and every discipline.",
+    "joinWaitlist": "JOIN THE WAITLIST",
+    "explore": "Explore the platform ↓"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "From signup to mastery — your creature companion is with you at every step.",
+    "step1Title": "Hatch Your Creature",
+    "step1Desc": "Pick from a roster of unique AI creatures — each with different learning personalities, strengths, and teaching styles that match how you learn best.",
+    "step2Title": "Learn Together",
+    "step2Desc": "Your creature asks questions, explains concepts, quizzes you, and adapts to your pace. It remembers what you struggle with, detects your mood, and celebrates your wins.",
+    "step3Title": "Evolve & Level Up",
+    "step3Desc": "As you master subjects, your companion evolves — unlocking new forms, abilities, and knowledge. Earn XP, collect badges, and watch your creature transform."
+  },
+  "parallax": {
+    "title": "Learning Is an\nAdventure.",
+    "description": "Your companion remembers every lesson, celebrates every win, and never gives up on you."
+  },
+  "companions": {
+    "title": "Meet Your Companions",
+    "subtitle": "Every learner is different. So is every creature. Choose a companion that matches your energy — anywhere in the world.",
+    "lumisName": "Lumis",
+    "lumisType": "The Patient Scholar",
+    "lumisDesc": "Calm, methodical, and endlessly patient. Lumis breaks down complex topics into gentle steps. Perfect for deep thinkers and careful learners.",
+    "blazekName": "Blazek",
+    "blazekType": "The Fierce Motivator",
+    "blazekDesc": "High-energy and competitive. Blazek pushes you with timed challenges, streaks, and an unstoppable drive to level up. Born for exam warriors.",
+    "nuzzleName": "Nuzzle",
+    "nuzzleType": "The Creative Explorer",
+    "nuzzleDesc": "Curious and imaginative. Nuzzle connects ideas across subjects, finding creative links you never expected. Ideal for explorers and artists."
+  },
+  "whyVispo": {
+    "title": "Why Vispo",
+    "subtitle": "A global platform built for how you actually learn",
+    "feature1Title": "Multi-AI Tutoring",
+    "feature1Desc": "Your creature learns your patterns — what confuses you, what clicks, and how fast you move. Powered by GPT, Claude, and Gemini, it adapts in real time.",
+    "feature2Title": "Creature Evolution",
+    "feature2Desc": "Earn XP, unlock creature evolutions, collect badges, and track streaks. Your creature transforms as you master new subjects. Progress feels tangible.",
+    "feature3Title": "Every Subject, Every Language",
+    "feature3Desc": "From calculus to creative writing, chemistry to coding. Vispo covers every subject across every language — one global platform for all learners."
+  },
+  "waitlist": {
+    "title": "Your Creature\nIs Waiting.",
+    "description": "Join the waitlist for the world's first AI tutoring platform where you learn alongside a creature that grows with you.\nEarly supporters get exclusive creatures and lifetime perks.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@email.com",
+    "submit": "JOIN THE WAITLIST",
+    "submitting": "JOINING...",
+    "success": "You're on the list! We'll be in touch.",
+    "errorDefault": "Something went wrong",
+    "errorNetwork": "Network error. Please try again.",
+    "disclaimer": "No spam. Unsubscribe anytime. 12,400+ already on the list."
+  },
+  "faq": {
+    "title": "Questions & Answers",
+    "q1": "What exactly is Vispo?",
+    "a1": "Vispo is a global AI tutoring platform where every student gets a personal creature companion. It's powered by the world's best AI models — GPT, Claude, Gemini — and works across desktop, web, and mobile. Your creature learns with you, adapts to your pace, and evolves as you grow.",
+    "q2": "What can the creature actually do?",
+    "a2": "Your creature is an AI tutor that chats, listens, watches you write, reads your handwriting, and draws on a whiteboard with you. It detects your mood, remembers your weak spots, and uses spaced repetition to help you retain knowledge. As you study, it earns XP and evolves into new forms.",
+    "q3": "Is this for students only?",
+    "a3": "No — Vispo serves both students and teachers. Students get AI creature companions for personalized learning. Teachers get exam creation tools, auto-grading, student monitoring, and learning analytics. It's a complete global education platform.",
+    "q4": "Does it work offline?",
+    "a4": "Yes. Vispo is offline-first — all your data is stored locally and syncs across devices when you reconnect. Desktop app (macOS), PWA web app, or mobile — your creature and progress are always with you, even without internet."
+  },
+  "footer": {
+    "description": "The global AI tutoring platform where you learn alongside a creature that grows with you.",
+    "product": "Product",
+    "productLinks": ["How It Works", "Companions", "Pricing", "FAQ"],
+    "company": "Company",
+    "companyLinks": ["About", "Blog", "Careers", "Contact"],
+    "legal": "Legal",
+    "legalLinks": ["Privacy", "Terms"],
+    "copyright": "© 2026 Vispo LLC. All rights reserved."
+  },
+  "stats": {
+    "waitlistSignups": "Waitlist signups worldwide",
+    "subjects": "Subjects & languages",
+    "creatures": "Unique AI creatures",
+    "retention": "Faster knowledge retention"
+  }
+}

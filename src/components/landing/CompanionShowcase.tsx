@@ -1,29 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const companions = [
-  {
-    name: "Lumis",
-    type: "The Patient Scholar",
-    desc: "Calm, methodical, and endlessly patient. Lumis breaks down complex topics into gentle steps. Perfect for deep thinkers and careful learners.",
-    image: "/images/lumis.png",
-  },
-  {
-    name: "Blazek",
-    type: "The Fierce Motivator",
-    desc: "High-energy and competitive. Blazek pushes you with timed challenges, streaks, and an unstoppable drive to level up. Born for exam warriors.",
-    image: "/images/blazek.png",
-  },
-  {
-    name: "Nuzzle",
-    type: "The Creative Explorer",
-    desc: "Curious and imaginative. Nuzzle connects ideas across subjects, finding creative links you never expected. Ideal for explorers and artists.",
-    image: "/images/nuzzle.png",
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function CompanionShowcase() {
+  const { t } = useLanguage();
+
+  const companions = [
+    {
+      name: t("companions.lumisName") as string,
+      type: t("companions.lumisType") as string,
+      desc: t("companions.lumisDesc") as string,
+      image: "/images/lumis.png",
+    },
+    {
+      name: t("companions.blazekName") as string,
+      type: t("companions.blazekType") as string,
+      desc: t("companions.blazekDesc") as string,
+      image: "/images/blazek.png",
+    },
+    {
+      name: t("companions.nuzzleName") as string,
+      type: t("companions.nuzzleType") as string,
+      desc: t("companions.nuzzleDesc") as string,
+      image: "/images/nuzzle.png",
+    },
+  ];
+
   return (
     <section id="companions" className="bg-[#1A1A1A] px-6 py-20 md:px-16">
       <div className="mx-auto max-w-[1440px]">
@@ -35,7 +38,7 @@ export default function CompanionShowcase() {
             transition={{ duration: 0.5 }}
             className="font-playfair text-[22px] font-semibold italic tracking-[0.5px] text-white"
           >
-            Meet Your Companions
+            {t("companions.title") as string}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -44,8 +47,7 @@ export default function CompanionShowcase() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-4 font-inter text-base leading-[1.6] text-[#777]"
           >
-            Every learner is different. So is every creature. Choose a companion
-            that matches your energy — anywhere in the world.
+            {t("companions.subtitle") as string}
           </motion.p>
         </div>
 

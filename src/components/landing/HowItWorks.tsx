@@ -1,26 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const steps = [
-  {
-    num: "01",
-    title: "Hatch Your Creature",
-    desc: "Pick from a roster of unique AI creatures — each with different learning personalities, strengths, and teaching styles that match how you learn best.",
-  },
-  {
-    num: "02",
-    title: "Learn Together",
-    desc: "Your creature asks questions, explains concepts, quizzes you, and adapts to your pace. It remembers what you struggle with, detects your mood, and celebrates your wins.",
-  },
-  {
-    num: "03",
-    title: "Evolve & Level Up",
-    desc: "As you master subjects, your companion evolves — unlocking new forms, abilities, and knowledge. Earn XP, collect badges, and watch your creature transform.",
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function HowItWorks() {
+  const { t } = useLanguage();
+
+  const steps = [
+    { num: "01", title: t("howItWorks.step1Title") as string, desc: t("howItWorks.step1Desc") as string },
+    { num: "02", title: t("howItWorks.step2Title") as string, desc: t("howItWorks.step2Desc") as string },
+    { num: "03", title: t("howItWorks.step3Title") as string, desc: t("howItWorks.step3Desc") as string },
+  ];
+
   return (
     <section id="how-it-works" className="px-6 py-20 md:px-16">
       <div className="mx-auto max-w-[1440px]">
@@ -32,7 +23,7 @@ export default function HowItWorks() {
             transition={{ duration: 0.5 }}
             className="font-playfair text-[22px] font-semibold italic tracking-[0.5px] text-[#1A1A1A]"
           >
-            How It Works
+            {t("howItWorks.title") as string}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -41,7 +32,7 @@ export default function HowItWorks() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="mt-4 font-inter text-base leading-[1.6] text-[#777]"
           >
-            From signup to mastery — your creature companion is with you at every step.
+            {t("howItWorks.subtitle") as string}
           </motion.p>
         </div>
 

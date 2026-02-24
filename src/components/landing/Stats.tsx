@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 function CountUp({
   end,
@@ -36,20 +37,22 @@ function CountUp({
   );
 }
 
-const stats = [
-  { value: 12400, suffix: "+", label: "Waitlist signups worldwide" },
-  { value: 50, suffix: "+", label: "Subjects & languages" },
-  { value: 15, suffix: "", label: "Unique AI creatures" },
-  { value: 3, suffix: "x", label: "Faster knowledge retention" },
-];
-
 export default function Stats() {
+  const { t } = useLanguage();
+
+  const stats = [
+    { value: 12400, suffix: "+", label: t("stats.waitlistSignups") as string },
+    { value: 50, suffix: "+", label: t("stats.subjects") as string },
+    { value: 15, suffix: "", label: t("stats.creatures") as string },
+    { value: 3, suffix: "x", label: t("stats.retention") as string },
+  ];
+
   return (
     <section className="border-y border-[#E5E2DC] bg-[#E5E2DC]">
       <div className="mx-auto grid max-w-[1440px] grid-cols-2 gap-px md:grid-cols-4">
         {stats.map((stat, i) => (
           <motion.div
-            key={stat.label}
+            key={i}
             initial={{ opacity: 0, scale: 1 }}
             whileInView={{ opacity: 1, scale: [1, 1.05, 1] }}
             viewport={{ once: true, margin: "-100px" }}

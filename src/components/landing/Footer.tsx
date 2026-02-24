@@ -1,12 +1,15 @@
 "use client";
 
 import { Twitter, Instagram, Github } from "lucide-react";
-
-const productLinks = ["How It Works", "Companions", "Pricing", "FAQ"];
-const companyLinks = ["About", "Blog", "Careers", "Contact"];
-const legalLinks = ["Privacy", "Terms"];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
+  const productLinks = t("footer.productLinks") as string[];
+  const companyLinks = t("footer.companyLinks") as string[];
+  const legalLinks = t("footer.legalLinks") as string[];
+
   return (
     <footer className="bg-[#1A1A1A] px-6 pb-8 pt-16 md:px-16">
       <div className="mx-auto max-w-[1440px]">
@@ -16,26 +19,25 @@ export default function Footer() {
               VISPO
             </span>
             <p className="font-inter text-[13px] leading-[1.6] text-[#666]">
-              The global AI tutoring platform where you learn alongside a
-              creature that grows with you.
+              {t("footer.description") as string}
             </p>
           </div>
 
           <div className="flex flex-wrap gap-16">
             <div className="flex flex-col gap-4">
-              <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">Product</span>
+              <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">{t("footer.product") as string}</span>
               {productLinks.map((link) => (
                 <a key={link} href="#" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
               ))}
             </div>
             <div className="flex flex-col gap-4">
-              <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">Company</span>
+              <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">{t("footer.company") as string}</span>
               {companyLinks.map((link) => (
                 <a key={link} href="#" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
               ))}
             </div>
             <div className="flex flex-col gap-4">
-              <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">Legal</span>
+              <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">{t("footer.legal") as string}</span>
               {legalLinks.map((link) => (
                 <a key={link} href="#" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
               ))}
@@ -44,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex items-center justify-between border-t border-[#333] pt-6">
-          <span className="font-inter text-xs text-[#666]">&copy; 2026 Vispo LLC. All rights reserved.</span>
+          <span className="font-inter text-xs text-[#666]">{t("footer.copyright") as string}</span>
           <div className="flex items-center gap-4">
             <a href="#" className="text-[#666] transition-colors hover:text-white"><Twitter className="h-4 w-4" /></a>
             <a href="#" className="text-[#666] transition-colors hover:text-white"><Instagram className="h-4 w-4" /></a>

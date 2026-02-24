@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useLanguage, renderWithBreaks } from "@/i18n/LanguageContext";
 
 export default function WaitlistCTA() {
+  const { t } = useLanguage();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -24,17 +26,17 @@ export default function WaitlistCTA() {
 
       if (!res.ok) {
         setStatus("error");
-        setMessage(data.error || "Something went wrong");
+        setMessage(data.error || (t("waitlist.errorDefault") as string));
         return;
       }
 
       setStatus("success");
-      setMessage("You're on the list! We'll be in touch.");
+      setMessage(t("waitlist.success") as string);
       setName("");
       setEmail("");
     } catch {
       setStatus("error");
-      setMessage("Network error. Please try again.");
+      setMessage(t("waitlist.errorNetwork") as string);
     }
   };
 
@@ -59,9 +61,7 @@ export default function WaitlistCTA() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center font-playfair text-4xl font-medium italic leading-[1.05] tracking-[-2px] text-white md:text-[64px]"
           >
-            Your Creature
-            <br />
-            Is Waiting.
+            {renderWithBreaks(t("waitlist.title") as string)}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -70,10 +70,7 @@ export default function WaitlistCTA() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="max-w-[520px] text-center font-inter text-base leading-[1.6] text-[#777]"
           >
-            Join the waitlist for the world&apos;s first AI tutoring platform
-            where you learn alongside a creature that grows with you.
-            <br />
-            Early supporters get exclusive creatures and lifetime perks.
+            {renderWithBreaks(t("waitlist.description") as string)}
           </motion.p>
         </div>
 
@@ -88,7 +85,7 @@ export default function WaitlistCTA() {
           <div className="flex flex-col gap-3 md:flex-row">
             <input
               type="text"
-              placeholder="Your name"
+              placeholder={t("waitlist.namePlaceholder") as string}
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="h-14 w-full flex-1 rounded-lg border border-[#555] bg-[#2A2A2A] px-4 font-inter text-base text-gray-200 placeholder-gray-500 outline-none transition-colors duration-200 focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/30 focus:ring-inset"
@@ -96,7 +93,7 @@ export default function WaitlistCTA() {
             />
             <input
               type="email"
-              placeholder="you@email.com"
+              placeholder={t("waitlist.emailPlaceholder") as string}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="h-14 w-full flex-1 rounded-lg border border-[#555] bg-[#2A2A2A] px-4 font-inter text-base text-gray-200 placeholder-gray-500 outline-none transition-colors duration-200 focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/30 focus:ring-inset"
@@ -111,7 +108,7 @@ export default function WaitlistCTA() {
             transition={status === "idle" ? { repeat: Infinity, duration: 2, ease: "easeInOut" } : {}}
             className="flex h-14 items-center justify-center rounded-lg bg-[#FDFCF9] font-inter text-base font-semibold tracking-[1px] text-[#1A1A1A] transition-colors hover:bg-white disabled:opacity-50"
           >
-            {status === "loading" ? "JOINING..." : "JOIN THE WAITLIST"}
+            {status === "loading" ? (t("waitlist.submitting") as string) : (t("waitlist.submit") as string)}
           </motion.button>
 
           {status === "success" && (
@@ -126,7 +123,7 @@ export default function WaitlistCTA() {
           )}
 
           <p className="text-center font-inter text-xs text-[#666]">
-            No spam. Unsubscribe anytime. 12,400+ already on the list.
+            {t("waitlist.disclaimer") as string}
           </p>
         </motion.form>
       </div>

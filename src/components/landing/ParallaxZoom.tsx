@@ -2,8 +2,10 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useLanguage, renderWithBreaks } from "@/i18n/LanguageContext";
 
 export default function ParallaxZoom() {
+  const { t } = useLanguage();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -27,13 +29,10 @@ export default function ParallaxZoom() {
         className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-[#0D0D0D99] px-6"
       >
         <h2 className="text-center font-playfair text-4xl font-medium italic leading-[1.05] tracking-[-2px] text-white md:text-[64px]">
-          Learning Is an
-          <br />
-          Adventure.
+          {renderWithBreaks(t("parallax.title") as string)}
         </h2>
         <p className="max-w-[520px] text-center font-inter text-base leading-[1.6] text-[#999]">
-          Your companion remembers every lesson, celebrates every win, and never
-          gives up on you.
+          {t("parallax.description") as string}
         </p>
       </motion.div>
     </section>

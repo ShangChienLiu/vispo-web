@@ -3,28 +3,18 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-
-const faqs = [
-  {
-    q: "What exactly is Vispo?",
-    a: "Vispo is a global AI tutoring platform where every student gets a personal creature companion. It's powered by the world's best AI models — GPT, Claude, Gemini — and works across desktop, web, and mobile. Your creature learns with you, adapts to your pace, and evolves as you grow.",
-  },
-  {
-    q: "What can the creature actually do?",
-    a: "Your creature is an AI tutor that chats, listens, watches you write, reads your handwriting, and draws on a whiteboard with you. It detects your mood, remembers your weak spots, and uses spaced repetition to help you retain knowledge. As you study, it earns XP and evolves into new forms.",
-  },
-  {
-    q: "Is this for students only?",
-    a: "No — Vispo serves both students and teachers. Students get AI creature companions for personalized learning. Teachers get exam creation tools, auto-grading, student monitoring, and learning analytics. It's a complete global education platform.",
-  },
-  {
-    q: "Does it work offline?",
-    a: "Yes. Vispo is offline-first — all your data is stored locally and syncs across devices when you reconnect. Desktop app (macOS), PWA web app, or mobile — your creature and progress are always with you, even without internet.",
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function FAQ() {
+  const { t } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqs = [
+    { q: t("faq.q1") as string, a: t("faq.a1") as string },
+    { q: t("faq.q2") as string, a: t("faq.a2") as string },
+    { q: t("faq.q3") as string, a: t("faq.a3") as string },
+    { q: t("faq.q4") as string, a: t("faq.a4") as string },
+  ];
 
   return (
     <section id="faq" className="px-6 py-20 md:px-16">
@@ -37,7 +27,7 @@ export default function FAQ() {
             transition={{ duration: 0.5 }}
             className="font-playfair text-[22px] font-semibold italic tracking-[0.5px] text-[#1A1A1A]"
           >
-            Questions & Answers
+            {t("faq.title") as string}
           </motion.h2>
         </div>
 
