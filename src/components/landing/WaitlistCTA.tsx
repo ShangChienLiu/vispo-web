@@ -83,7 +83,7 @@ export default function WaitlistCTA() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.5 }}
           onSubmit={handleSubmit}
-          className="flex w-full flex-col gap-4 px-2 md:max-w-[480px] md:px-0"
+          className="flex w-full flex-col gap-4 md:max-w-[480px]"
         >
           <div className="flex flex-col gap-3 md:flex-row">
             <input
@@ -91,7 +91,7 @@ export default function WaitlistCTA() {
               placeholder="Your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="h-12 w-full flex-1 border border-[#333] bg-transparent px-4 font-inter text-[15px] text-white placeholder-[#666] outline-none transition-colors focus:border-[#666]"
+              className="h-14 w-full flex-1 rounded-lg border border-[#555] bg-[#2A2A2A] px-4 font-inter text-base text-gray-200 placeholder-gray-500 outline-none transition-colors duration-200 focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/30 focus:ring-inset"
               required
             />
             <input
@@ -99,7 +99,7 @@ export default function WaitlistCTA() {
               placeholder="you@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-12 w-full flex-1 border border-[#333] bg-transparent px-4 font-inter text-[15px] text-white placeholder-[#666] outline-none transition-colors focus:border-[#666]"
+              className="h-14 w-full flex-1 rounded-lg border border-[#555] bg-[#2A2A2A] px-4 font-inter text-base text-gray-200 placeholder-gray-500 outline-none transition-colors duration-200 focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/30 focus:ring-inset"
               required
             />
           </div>
@@ -109,7 +109,7 @@ export default function WaitlistCTA() {
             whileHover={{ scale: 1.01 }}
             animate={status === "idle" ? { scale: [1, 1.01, 1] } : {}}
             transition={status === "idle" ? { repeat: Infinity, duration: 2, ease: "easeInOut" } : {}}
-            className="flex h-[52px] items-center justify-center bg-[#FDFCF9] font-inter text-[13px] font-semibold tracking-[1px] text-[#1A1A1A] transition-colors hover:bg-white disabled:opacity-50"
+            className="flex h-14 items-center justify-center rounded-lg bg-[#FDFCF9] font-inter text-base font-semibold tracking-[1px] text-[#1A1A1A] transition-colors hover:bg-white disabled:opacity-50"
           >
             {status === "loading" ? "JOINING..." : "JOIN THE WAITLIST"}
           </motion.button>
