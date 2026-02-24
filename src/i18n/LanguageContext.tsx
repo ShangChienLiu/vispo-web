@@ -33,6 +33,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const stored = localStorage.getItem(STORAGE_KEY) as Language | null;
     if (stored === "en" || stored === "zh") {
       setLangState(stored);
+    } else {
+      const browserLang = navigator.language || "";
+      if (browserLang.startsWith("zh")) {
+        setLangState("zh");
+      }
     }
     setMounted(true);
   }, []);
