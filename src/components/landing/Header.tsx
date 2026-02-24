@@ -50,12 +50,20 @@ export default function Header() {
           </nav>
         </div>
         <div className="hidden items-center gap-3 md:flex">
-          <button
-            onClick={toggleLang}
-            className="border border-[#E5E2DC] px-3 py-1.5 text-[13px] font-medium text-[#777] transition-colors hover:border-[#1A1A1A] hover:text-[#1A1A1A]"
-          >
-            {lang === "en" ? "中文" : "EN"}
-          </button>
+          <div className="flex items-center overflow-hidden border border-[#E5E2DC]">
+            <button
+              onClick={() => setLang("en")}
+              className={`px-3 py-1.5 text-[13px] font-semibold transition-colors ${lang === "en" ? "bg-[#1A1A1A] text-white" : "bg-transparent text-[#777] hover:text-[#1A1A1A]"}`}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => setLang("zh")}
+              className={`px-3 py-1.5 text-[13px] font-semibold transition-colors ${lang === "zh" ? "bg-[#1A1A1A] text-white" : "bg-transparent text-[#777] hover:text-[#1A1A1A]"}`}
+            >
+              中文
+            </button>
+          </div>
           <button
             onClick={() => scrollTo("waitlist")}
             className="bg-[#1A1A1A] px-6 py-2.5 text-[13px] font-semibold tracking-[1px] text-[#FDFCF9] transition-colors hover:bg-black"
@@ -97,12 +105,20 @@ export default function Header() {
               <button onClick={() => scrollTo("why-vispo")} className="text-left text-sm text-[#777]">{t("header.platform") as string}</button>
               <button onClick={() => scrollTo("companions")} className="text-left text-sm text-[#777]">{t("header.companions") as string}</button>
               <button onClick={() => scrollTo("faq")} className="text-left text-sm text-[#777]">{t("header.faq") as string}</button>
-              <button
-                onClick={toggleLang}
-                className="text-left text-sm font-medium text-[#777]"
-              >
-                {lang === "en" ? "中文" : "EN"}
-              </button>
+              <div className="flex w-fit items-center overflow-hidden border border-[#E5E2DC]">
+                <button
+                  onClick={() => setLang("en")}
+                  className={`px-3 py-1.5 text-sm font-semibold transition-colors ${lang === "en" ? "bg-[#1A1A1A] text-white" : "bg-transparent text-[#777]"}`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => setLang("zh")}
+                  className={`px-3 py-1.5 text-sm font-semibold transition-colors ${lang === "zh" ? "bg-[#1A1A1A] text-white" : "bg-transparent text-[#777]"}`}
+                >
+                  中文
+                </button>
+              </div>
               <button onClick={() => scrollTo("waitlist")} className="mt-2 bg-[#1A1A1A] px-6 py-2.5 text-[13px] font-semibold tracking-[1px] text-[#FDFCF9]">{t("header.joinWaitlist") as string}</button>
             </div>
           </motion.div>
