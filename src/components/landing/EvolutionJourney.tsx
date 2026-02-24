@@ -5,11 +5,11 @@ import Image from "next/image";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const stages = [
-  { key: 1, size: 120, mobileSize: 80, gradient: "from-purple-600/40 to-purple-900/60" },
-  { key: 2, size: 150, mobileSize: 100, gradient: "from-purple-500/50 to-teal-700/50" },
-  { key: 3, size: 180, mobileSize: 120, gradient: "from-teal-500/50 to-purple-500/50" },
-  { key: 4, size: 220, mobileSize: 150, gradient: "from-teal-400/60 to-purple-400/60" },
-  { key: 5, size: 260, mobileSize: 180, image: "/images/creature.png" },
+  { key: 1, size: 120, mobileSize: 80, image: "/images/stage1-spark.png" },
+  { key: 2, size: 150, mobileSize: 100, image: "/images/stage2-hatchling.png" },
+  { key: 3, size: 180, mobileSize: 120, image: "/images/stage3-juvenile.png" },
+  { key: 4, size: 220, mobileSize: 150, image: "/images/stage4-awakened.png" },
+  { key: 5, size: 260, mobileSize: 180, image: "/images/stage5-vispo.png" },
 ];
 
 function ChevronRight() {
@@ -77,9 +77,9 @@ export default function EvolutionJourney() {
         </div>
 
         {/* Stages — horizontal on desktop, vertical on mobile */}
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-4 lg:gap-8">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:items-end md:justify-center md:gap-4 lg:gap-8">
           {stages.map((stage, i) => (
-            <div key={stage.key} className="flex flex-col items-center gap-6 md:flex-row md:gap-4 lg:gap-8">
+            <div key={stage.key} className="flex flex-col items-center gap-6 md:flex-row md:items-end md:gap-4 lg:gap-8">
               <motion.div
                 initial={{ opacity: 0, y: 40, scale: 0.8 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -87,35 +87,20 @@ export default function EvolutionJourney() {
                 transition={{ duration: 0.5, delay: i * 0.15 }}
                 className="flex flex-col items-center gap-3"
               >
-                {/* Creature circle — mobile */}
-                {stage.image ? (
-                  <div
-                    className="relative overflow-hidden rounded-full border-2 border-purple-400/30 md:hidden"
-                    style={{ width: stage.mobileSize, height: stage.mobileSize }}
-                  >
-                    <Image src={stage.image} alt="Vispo" fill className="object-cover" />
-                  </div>
-                ) : (
-                  <div
-                    className={`rounded-full bg-gradient-to-br ${stage.gradient} border border-white/10 md:hidden`}
-                    style={{ width: stage.mobileSize, height: stage.mobileSize }}
-                  />
-                )}
-
-                {/* Creature circle — desktop */}
-                {stage.image ? (
-                  <div
-                    className="relative hidden overflow-hidden rounded-full border-2 border-purple-400/30 md:block"
-                    style={{ width: stage.size, height: stage.size }}
-                  >
-                    <Image src={stage.image} alt="Vispo" fill className="object-cover" />
-                  </div>
-                ) : (
-                  <div
-                    className={`hidden rounded-full bg-gradient-to-br ${stage.gradient} border border-white/10 md:block`}
-                    style={{ width: stage.size, height: stage.size }}
-                  />
-                )}
+                {/* Mobile */}
+                <div
+                  className="relative overflow-hidden rounded-full border-2 border-purple-400/30 md:hidden"
+                  style={{ width: stage.mobileSize, height: stage.mobileSize }}
+                >
+                  <Image src={stage.image} alt="" fill className="object-cover" />
+                </div>
+                {/* Desktop */}
+                <div
+                  className="relative hidden overflow-hidden rounded-full border-2 border-purple-400/30 md:block"
+                  style={{ width: stage.size, height: stage.size }}
+                >
+                  <Image src={stage.image} alt="" fill className="object-cover" />
+                </div>
 
                 {/* Labels */}
                 <span className="font-inter text-[11px] font-medium uppercase tracking-[1.5px] text-[#555]">
