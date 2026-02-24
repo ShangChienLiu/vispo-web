@@ -83,6 +83,25 @@
     "legalLinks": ["Privacy", "Terms"],
     "copyright": "© 2026 Vispo LLC. All rights reserved."
   },
+  "evolutionJourney": {
+    "title": "Watch It Evolve\nAs You Scroll",
+    "subtitle": "Your creature companion transforms through 5 stages as you explore the platform — from a tiny spark to a fully evolved Vispo.",
+    "stage1Label": "Stage 1",
+    "stage1Name": "Spark",
+    "stage1Section": "Hero",
+    "stage2Label": "Stage 2",
+    "stage2Name": "Hatchling",
+    "stage2Section": "How It Works",
+    "stage3Label": "Stage 3",
+    "stage3Name": "Juvenile",
+    "stage3Section": "Companions",
+    "stage4Label": "Stage 4",
+    "stage4Name": "Awakened",
+    "stage4Section": "Platform",
+    "stage5Label": "Stage 5",
+    "stage5Name": "Vispo",
+    "stage5Section": "Waitlist CTA"
+  },
   "stats": {
     "waitlistSignups": "Waitlist signups worldwide",
     "subjects": "Subjects & languages",

@@ -4,6 +4,7 @@ import { LanguageProvider } from "@/i18n/LanguageContext";
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import HowItWorks from "@/components/landing/HowItWorks";
+import EvolutionJourney from "@/components/landing/EvolutionJourney";
 import ParallaxZoom from "@/components/landing/ParallaxZoom";
 import CompanionShowcase from "@/components/landing/CompanionShowcase";
 import WhyVispo from "@/components/landing/WhyVispo";
@@ -18,6 +19,7 @@ export default function Home() {
         <Header />
         <Hero />
         <HowItWorks />
+        <EvolutionJourney />
         <ParallaxZoom />
         <CompanionShowcase />
         <WhyVispo />

@@ -83,6 +83,25 @@
     "legalLinks": ["隱私權政策", "使用條款"],
     "copyright": "© 2026 Vispo LLC. 保留所有權利。"
   },
+  "evolutionJourney": {
+    "title": "隨著你的探索\n看它進化",
+    "subtitle": "你的生物夥伴在你探索平台的過程中經歷5個階段的蛻變——從一顆小火花到完全進化的 Vispo。",
+    "stage1Label": "階段 1",
+    "stage1Name": "火花",
+    "stage1Section": "首頁",
+    "stage2Label": "階段 2",
+    "stage2Name": "幼體",
+    "stage2Section": "使用方式",
+    "stage3Label": "階段 3",
+    "stage3Name": "少年體",
+    "stage3Section": "夥伴",
+    "stage4Label": "階段 4",
+    "stage4Name": "覺醒體",
+    "stage4Section": "平台",
+    "stage5Label": "階段 5",
+    "stage5Name": "Vispo",
+    "stage5Section": "加入候補"
+  },
   "stats": {
     "waitlistSignups": "全球候補名單註冊",
     "subjects": "學科與語言",
