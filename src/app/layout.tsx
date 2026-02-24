@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "The global AI tutoring platform where you learn alongside a creature that grows with you.",
   icons: {
     icon: "/icon.png?v=2",
-    apple: "/favicon-180.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Vispo — AI Tutoring Platform",

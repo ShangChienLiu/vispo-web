@@ -83,7 +83,7 @@ export default function WaitlistCTA() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.5 }}
           onSubmit={handleSubmit}
-          className="flex w-full max-w-[480px] flex-col gap-4"
+          className="flex w-full flex-col gap-4 px-2 md:max-w-[480px] md:px-0"
         >
           <div className="flex flex-col gap-3 md:flex-row">
             <input
@@ -91,7 +91,7 @@ export default function WaitlistCTA() {
               placeholder="Your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="h-12 flex-1 border border-[#333] bg-transparent px-4 font-inter text-[13px] text-white placeholder-[#666] outline-none transition-colors focus:border-[#666]"
+              className="h-12 w-full flex-1 border border-[#333] bg-transparent px-4 font-inter text-[15px] text-white placeholder-[#666] outline-none transition-colors focus:border-[#666]"
               required
             />
             <input
@@ -99,7 +99,7 @@ export default function WaitlistCTA() {
               placeholder="you@email.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="h-12 flex-1 border border-[#333] bg-transparent px-4 font-inter text-[13px] text-white placeholder-[#666] outline-none transition-colors focus:border-[#666]"
+              className="h-12 w-full flex-1 border border-[#333] bg-transparent px-4 font-inter text-[15px] text-white placeholder-[#666] outline-none transition-colors focus:border-[#666]"
               required
             />
           </div>
