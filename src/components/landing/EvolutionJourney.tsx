@@ -87,18 +87,13 @@ export default function EvolutionJourney() {
                 transition={{ duration: 0.5, delay: i * 0.15 }}
                 className="flex flex-col items-center gap-3"
               >
-                {/* Creature circle */}
+                {/* Creature circle — mobile */}
                 {stage.image ? (
                   <div
-                    className="relative overflow-hidden rounded-full border-2 border-purple-400/30"
+                    className="relative overflow-hidden rounded-full border-2 border-purple-400/30 md:hidden"
                     style={{ width: stage.mobileSize, height: stage.mobileSize }}
                   >
-                    <Image
-                      src={stage.image}
-                      alt="Vispo"
-                      fill
-                      className="object-cover md:hidden"
-                    />
+                    <Image src={stage.image} alt="Vispo" fill className="object-cover" />
                   </div>
                 ) : (
                   <div
@@ -107,18 +102,13 @@ export default function EvolutionJourney() {
                   />
                 )}
 
-                {/* Desktop size */}
+                {/* Creature circle — desktop */}
                 {stage.image ? (
                   <div
                     className="relative hidden overflow-hidden rounded-full border-2 border-purple-400/30 md:block"
                     style={{ width: stage.size, height: stage.size }}
                   >
-                    <Image
-                      src={stage.image}
-                      alt="Vispo"
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src={stage.image} alt="Vispo" fill className="object-cover" />
                   </div>
                 ) : (
                   <div
