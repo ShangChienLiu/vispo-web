@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "The global AI tutoring platform where you learn alongside a creature that grows with you.",
   icons: {
-    icon: "/favicon-32.png",
+    icon: "/icon.png?v=2",
     apple: "/favicon-180.png",
   },
   openGraph: {
