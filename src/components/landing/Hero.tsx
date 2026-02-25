@@ -69,12 +69,22 @@ export default function Hero() {
           initial={{ scale: 0.6, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative h-[360px] w-full max-w-[520px] overflow-hidden lg:h-[480px]"
+          className="relative flex h-[360px] w-full max-w-[520px] items-center justify-center lg:h-[480px]"
         >
-          <img
-            src="/icon.png"
+          <motion.img
+            src="/images/hero-creature-3d.png"
             alt="Vispo creature companion"
-            className="h-full w-full object-contain"
+            className="h-full w-full object-contain drop-shadow-[0_20px_40px_rgba(168,85,247,0.4)]"
+            style={{
+              filter:
+                "drop-shadow(0 10px 30px rgba(168,85,247,0.35)) drop-shadow(0 4px 12px rgba(0,0,0,0.3))",
+            }}
+            animate={{ y: [0, -12, 0] }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
           />
         </motion.div>
       </div>
