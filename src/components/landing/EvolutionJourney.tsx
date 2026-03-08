@@ -5,11 +5,11 @@ import Image from "next/image";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const stages = [
-  { key: 1, size: 120, mobileSize: 80, image: "/images/stage1-spark.png" },
-  { key: 2, size: 150, mobileSize: 100, image: "/images/stage2-hatchling.png" },
-  { key: 3, size: 180, mobileSize: 120, image: "/images/stage3-juvenile.png" },
-  { key: 4, size: 220, mobileSize: 150, image: "/images/stage4-awakened.png" },
-  { key: 5, size: 260, mobileSize: 180, image: "/images/stage5-vispo.png" },
+  { key: 1, size: 120, tabletSize: 80, mobileSize: 80, image: "/images/stage1-spark.png" },
+  { key: 2, size: 150, tabletSize: 100, mobileSize: 100, image: "/images/stage2-hatchling.png" },
+  { key: 3, size: 180, tabletSize: 120, mobileSize: 120, image: "/images/stage3-juvenile.png" },
+  { key: 4, size: 220, tabletSize: 150, mobileSize: 150, image: "/images/stage4-awakened.png" },
+  { key: 5, size: 260, tabletSize: 170, mobileSize: 180, image: "/images/stage5-vispo.png" },
 ];
 
 function ChevronRight() {
@@ -94,9 +94,16 @@ export default function EvolutionJourney() {
                 >
                   <Image src={stage.image} alt="" fill className="object-cover" />
                 </div>
-                {/* Desktop */}
+                {/* Tablet (md to lg) */}
                 <div
-                  className="relative hidden overflow-hidden rounded-full border-2 border-purple-400/30 md:block"
+                  className="relative hidden overflow-hidden rounded-full border-2 border-purple-400/30 md:block lg:hidden"
+                  style={{ width: stage.tabletSize, height: stage.tabletSize }}
+                >
+                  <Image src={stage.image} alt="" fill className="object-cover" />
+                </div>
+                {/* Desktop (lg+) */}
+                <div
+                  className="relative hidden overflow-hidden rounded-full border-2 border-purple-400/30 lg:block"
                   style={{ width: stage.size, height: stage.size }}
                 >
                   <Image src={stage.image} alt="" fill className="object-cover" />
