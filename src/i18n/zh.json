@@ -58,8 +58,8 @@
     "submit": "加入候補名單",
     "submitting": "加入中...",
     "success": "你已加入名單！我們會盡快聯繫你。",
-    "errorDefault": "出了點問題",
-    "errorNetwork": "網路錯誤，請重試。",
+    "errorDefault": "出了點問題。需要協助？support@vispo.app",
+    "errorNetwork": "網路錯誤，請重試。需要協助？support@vispo.app",
     "disclaimer": "無垃圾郵件，隨時退訂。已有12,400+人加入。"
   },
   "faq": {
@@ -81,7 +81,8 @@
     "companyLinks": ["關於", "部落格", "徵才", "聯繫我們"],
     "legal": "法律",
     "legalLinks": ["隱私權政策", "使用條款"],
-    "copyright": "© 2026 Vispo LLC. 保留所有權利。"
+    "copyright": "© 2026 Vispo LLC. 保留所有權利。",
+    "supportEmail": "需要協助？support@vispo.app"
   },
   "evolutionJourney": {
     "title": "隨著你的探索\n看它進化",

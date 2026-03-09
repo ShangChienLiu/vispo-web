@@ -32,9 +32,16 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-4">
               <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">{t("footer.company") as string}</span>
-              {companyLinks.map((link) => (
-                <a key={link} href="#" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
-              ))}
+              {companyLinks.map((link) => {
+                if (link === "Contact" || link === "聯繫我們") {
+                  return (
+                    <a key={link} href="mailto:hello@vispo.app" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
+                  );
+                }
+                return (
+                  <a key={link} href="#" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
+                );
+              })}
             </div>
             <div className="flex flex-col gap-4">
               <span className="font-inter text-[11px] font-semibold tracking-[1px] text-white">{t("footer.legal") as string}</span>
@@ -45,8 +52,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex items-center justify-between border-t border-[#333] pt-6">
-          <span className="font-inter text-xs text-[#666]">{t("footer.copyright") as string}</span>
+        <div className="mt-12 flex flex-col gap-4 border-t border-[#333] pt-6 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-1">
+            <span className="font-inter text-xs text-[#666]">{t("footer.copyright") as string}</span>
+            <a href="mailto:support@vispo.app" className="font-inter text-xs text-[#666] transition-colors hover:text-white">
+              {t("footer.supportEmail") as string}
+            </a>
+          </div>
           <div className="flex items-center gap-4">
             <a href="#" className="text-[#666] transition-colors hover:text-white"><Twitter className="h-4 w-4" /></a>
             <a href="#" className="text-[#666] transition-colors hover:text-white"><Instagram className="h-4 w-4" /></a>
