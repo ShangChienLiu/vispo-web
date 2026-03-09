@@ -1,0 +1,112 @@
+{
+  "header": {
+    "about": "关于",
+    "platform": "平台",
+    "companions": "伙伴",
+    "faq": "常见问题",
+    "joinWaitlist": "加入候补名单"
+  },
+  "hero": {
+    "badge": "全球AI辅导平台 — 2026年抢先体验",
+    "title": "学习、成长、\n共同进化。",
+    "description": "Vispo 是一个全球AI辅导平台，每位学生都能拥有一个专属的生物伙伴。它与你一起学习、适应你的节奏，并随着你掌握新学科而不断进化——跨越每种语言和每个学科。",
+    "joinWaitlist": "加入候补名单",
+    "explore": "探索平台 ↓"
+  },
+  "howItWorks": {
+    "title": "使用方式",
+    "subtitle": "从注册到精通——你的生物伙伴陪伴你每一步。",
+    "step1Title": "孵化你的生物",
+    "step1Desc": "从一系列独特的AI生物中挑选——每个都有不同的学习个性、优势和教学风格，匹配你的学习方式。",
+    "step2Title": "一起学习",
+    "step2Desc": "你的生物会提问、解释概念、测验你，并适应你的节奏。它记住你的困难之处，感知你的情绪，并庆祝你的每一次进步。",
+    "step3Title": "进化升级",
+    "step3Desc": "随着你掌握学科，你的伙伴会进化——解锁新形态、新能力和新知识。获取经验值，收集徽章，见证你的生物蜕变。"
+  },
+  "parallax": {
+    "title": "学习是一场\n冒险。",
+    "description": "你的伙伴记住每一堂课，庆祝每一次胜利，永远不会放弃你。"
+  },
+  "companions": {
+    "title": "认识你的伙伴",
+    "subtitle": "每个学习者都不同，每个生物也是如此。选择一个与你能量匹配的伙伴——在世界任何地方。",
+    "lumisName": "Lumis",
+    "lumisType": "耐心的学者",
+    "lumisDesc": "冷静、有条理、无限耐心。Lumis 将复杂话题分解为温和的步骤，非常适合深度思考者和谨慎的学习者。",
+    "blazekName": "Blazek",
+    "blazekType": "热血激励者",
+    "blazekDesc": "充满能量、爱竞争。Blazek 用限时挑战、连续打卡和不可阻挡的升级动力推动你前进。为备考战士而生。",
+    "nuzzleName": "Nuzzle",
+    "nuzzleType": "创意探索者",
+    "nuzzleDesc": "好奇且富有想象力。Nuzzle 跨学科连接思想，发现你意想不到的创意联系。非常适合探索者和艺术家。"
+  },
+  "whyVispo": {
+    "title": "为什么选择 Vispo",
+    "subtitle": "为你真正的学习方式打造的全球平台",
+    "feature1Title": "多AI辅导",
+    "feature1Desc": "你的生物学习你的模式——什么让你困惑，什么让你顿悟，以及你的学习速度。由GPT、Claude和Gemini驱动，即时适应。",
+    "feature2Title": "生物进化",
+    "feature2Desc": "获取经验值，解锁生物进化，收集徽章，追踪连续学习天数。随着你掌握新学科，你的生物也在蜕变。进步看得见、摸得着。",
+    "feature3Title": "涵盖每个学科、每种语言",
+    "feature3Desc": "从微积分到创意写作，从化学到编程。Vispo 涵盖每个学科、每种语言——一个为所有学习者打造的全球平台。"
+  },
+  "waitlist": {
+    "title": "你的生物\n正在等你。",
+    "description": "加入候补名单，体验全球首个AI辅导平台——与一个随你成长的生物一起学习。\n早期支持者可获得专属生物和终身特权。",
+    "namePlaceholder": "你的名字",
+    "emailPlaceholder": "you@email.com",
+    "submit": "加入候补名单",
+    "submitting": "加入中...",
+    "success": "你已加入名单！我们会尽快联系你。",
+    "errorDefault": "出了点问题。需要帮助？support@vispo.tech",
+    "errorNetwork": "网络错误，请重试。需要帮助？support@vispo.tech",
+    "disclaimer": "无垃圾邮件，随时退订。已有12,400+人加入。"
+  },
+  "faq": {
+    "title": "常见问答",
+    "q1": "Vispo 到底是什么？",
+    "a1": "Vispo 是一个全球AI辅导平台，每位学生都能拥有一个专属的生物伙伴。它由世界顶尖的AI模型驱动——GPT、Claude、Gemini——支持桌面端、网页端和移动端。你的生物与你一起学习，适应你的节奏，并随着你的成长而进化。",
+    "q2": "这个生物到底能做什么？",
+    "a2": "你的生物是一个AI导师，能对话、倾听、看你书写、辨识你的笔迹，还能和你一起在白板上画画。它能感知你的情绪，记住你的薄弱点，并使用间隔重复法帮助你记忆知识。随着你学习，它获取经验值并进化为新形态。",
+    "q3": "这只面向学生吗？",
+    "a3": "不——Vispo 同时服务学生和教师。学生获得AI生物伙伴进行个性化学习。教师获得考试创建工具、自动评分、学生监控和学习分析。这是一个完整的全球教育平台。",
+    "q4": "它能离线使用吗？",
+    "a4": "可以。Vispo 优先支持离线使用——所有数据存储在本地，重新联网时跨设备同步。桌面应用（macOS）、PWA网页应用或移动端——你的生物和学习进度始终与你同在，即使没有网络。"
+  },
+  "footer": {
+    "description": "全球AI辅导平台，让你与一个随你成长的生物一起学习。",
+    "product": "产品",
+    "productLinks": ["使用方式", "伙伴", "定价", "常见问题"],
+    "company": "公司",
+    "companyLinks": ["关于", "博客", "招聘", "联系我们"],
+    "legal": "法律",
+    "legalLinks": ["隐私政策", "使用条款"],
+    "copyright": "© 2026 Vispo LLC. 保留所有权利。",
+    "supportEmail": "需要帮助？support@vispo.tech"
+  },
+  "evolutionJourney": {
+    "title": "随着你的探索\n看它进化",
+    "subtitle": "你的生物伙伴在你探索平台的过程中经历5个阶段的蜕变——从一颗小火花到完全进化的 Vispo。",
+    "stage1Label": "阶段 1",
+    "stage1Name": "火花",
+    "stage1Section": "首页",
+    "stage2Label": "阶段 2",
+    "stage2Name": "幼体",
+    "stage2Section": "使用方式",
+    "stage3Label": "阶段 3",
+    "stage3Name": "少年体",
+    "stage3Section": "伙伴",
+    "stage4Label": "阶段 4",
+    "stage4Name": "觉醒体",
+    "stage4Section": "平台",
+    "stage5Label": "阶段 5",
+    "stage5Name": "Vispo",
+    "stage5Section": "加入候补"
+  },
+  "stats": {
+    "waitlistSignups": "全球候补名单注册",
+    "subjects": "学科与语言",
+    "creatures": "独特AI生物",
+    "retention": "知识记忆提升"
+  }
+}
