@@ -35,7 +35,7 @@ export default function Footer() {
               {companyLinks.map((link) => {
                 if (link === "Contact" || link === "聯繫我們") {
                   return (
-                    <a key={link} href="mailto:hello@vispo.app" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
+                    <a key={link} href="mailto:hello@vispo.tech" className="font-inter text-[13px] text-[#666] transition-colors hover:text-white">{link}</a>
                   );
                 }
                 return (
@@ -55,7 +55,7 @@ export default function Footer() {
         <div className="mt-12 flex flex-col gap-4 border-t border-[#333] pt-6 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-1">
             <span className="font-inter text-xs text-[#666]">{t("footer.copyright") as string}</span>
-            <a href="mailto:support@vispo.app" className="font-inter text-xs text-[#666] transition-colors hover:text-white">
+            <a href="mailto:support@vispo.tech" className="font-inter text-xs text-[#666] transition-colors hover:text-white">
               {t("footer.supportEmail") as string}
             </a>
           </div>

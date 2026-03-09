@@ -58,8 +58,8 @@
     "submit": "JOIN THE WAITLIST",
     "submitting": "JOINING...",
     "success": "You're on the list! We'll be in touch.",
-    "errorDefault": "Something went wrong. Need help? support@vispo.app",
-    "errorNetwork": "Network error. Please try again. Need help? support@vispo.app",
+    "errorDefault": "Something went wrong. Need help? support@vispo.tech",
+    "errorNetwork": "Network error. Please try again. Need help? support@vispo.tech",
     "disclaimer": "No spam. Unsubscribe anytime. 12,400+ already on the list."
   },
   "faq": {
@@ -82,7 +82,7 @@
     "legal": "Legal",
     "legalLinks": ["Privacy", "Terms"],
     "copyright": "© 2026 Vispo LLC. All rights reserved.",
-    "supportEmail": "Need help? support@vispo.app"
+    "supportEmail": "Need help? support@vispo.tech"
   },
   "evolutionJourney": {
     "title": "Watch It Evolve\nAs You Scroll",

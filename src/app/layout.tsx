@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Vispo — AI Tutoring Platform",
   description:
     "The global AI tutoring platform where you learn alongside a creature that grows with you.",
-  metadataBase: new URL("https://vispo.app"),
+  metadataBase: new URL("https://vispo.tech"),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "48x48" },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "Learn alongside a creature that grows with you. Join the waitlist.",
     type: "website",
-    url: "https://vispo.app",
+    url: "https://vispo.tech",
     siteName: "Vispo",
     images: [
       {
